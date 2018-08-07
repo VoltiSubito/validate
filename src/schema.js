@@ -123,7 +123,7 @@ export default class Schema {
     if (Array.isArray(rules)) {
       prop.type(Array);
 
-      if (rules.length == 1) {
+      if (rules.length === 1) {
         prop.each(rules[0]);
       } else {
         prop.elements(rules);
